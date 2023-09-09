@@ -1,11 +1,10 @@
-package com.furiousoop.furiousoopscontest.client;
+package com.furiousoop.client;
 
 import jakarta.annotation.Nullable;
 import org.springframework.http.*;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
 import java.util.Map;
 
 public class BaseClient {
