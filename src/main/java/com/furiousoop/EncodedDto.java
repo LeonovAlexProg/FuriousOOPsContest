@@ -1,4 +1,4 @@
-package com.furiousoop.client;
+package com.furiousoop;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
