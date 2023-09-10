@@ -1,5 +1,8 @@
 package com.furiousoop;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Caesar {
     String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public String result(String string, int shift){

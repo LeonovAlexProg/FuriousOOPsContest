@@ -1,9 +1,12 @@
 package com.furiousoop.client;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@AllArgsConstructor
+@Data
 public class EncodedDto {
-    String encoded;
-    Integer offset;
+    private final String encoded;
+    private final Integer offset;
+
+
 }
