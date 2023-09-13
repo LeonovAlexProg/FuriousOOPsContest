@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.List;
 
@@ -29,10 +30,9 @@ public class Controller {
     }
 
     @GetMapping("/decode")
-    public void decode() {
-        //String coded = decoderService.getCoded();
-        //List<String> decoded = decoderService.decode(coded);
-
-        //decoded.forEach(decoderService::tryString);
+    public void decode() throws UnsupportedEncodingException {
+        String coded = decoderService.getCoded();
+        String decoded = decoderService.decode(coded);
+        decoderService.sendDecoded(decoded);
     }
 }
